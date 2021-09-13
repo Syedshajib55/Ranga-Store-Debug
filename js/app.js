@@ -6,6 +6,7 @@ const loadProducts = () => {
 
 // show all product in UI 
 const showProducts = (products) => {
+  console.log(products);
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.images;
@@ -44,7 +45,7 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
-  document.getElementById(id).innerText = Math.round(total);
+  document.getElementById(id).innerText = (total.toFixed(2));
 };
 
 // set innerText function
