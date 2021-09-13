@@ -11,8 +11,12 @@ body {
   outline: none;
   /* border: none; */
 }
+.tomato{
+  color: rgb(198, 69, 46);
+  font-weight: 700;
+}
 .white{
-  color:white;
+  color: whitesmoke;
   font-weight: 700;
 }
 .search-fields {

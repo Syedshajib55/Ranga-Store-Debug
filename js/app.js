@@ -8,6 +8,7 @@ const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.images;
+    // Div create for Show Single Product 
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
@@ -15,8 +16,8 @@ const showProducts = (products) => {
          <img class="product-image" src=${product.image}></img>
       </div>
       <h3 class="fw-bold text-white">${product.title}</h3>
-      <p class="text-secondary">Category: <span class="white">${product.category}</span></p>
-      <h2>Price: <span class="white">$${product.price}</span></h2>
+      <p class="text-secondary">Category: ${product.category}</p>
+      <h2>Price: <span class="tomato">$${product.price}</span></h2>
       <p>Rating : <span class="white">${product.rating.rate}</span></p>
       <p>This Product Is Rated By <span class="white">${product.rating.count}</span> User.</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
@@ -30,12 +31,11 @@ let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
-
   updateTaxAndCharge();
   updateTotal();
   document.getElementById("total-Products").innerText = count;
 };
-
+//Get All input by a call this FUnction
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
