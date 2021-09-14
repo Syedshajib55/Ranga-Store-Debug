@@ -1,7 +1,26 @@
+/* Body Style  */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* Website Name  */
+.name-div{
+  margin-left: 40%;
+  margin-right: 40%;
+
+}
+.name{
+  font-weight: 700;
+  font-size:xxx-large;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 15px 50px;
+}
+.evaly{
+  color: rgb(184, 17, 17);
+}
+/* Search Field and Search Button Style  */
 .search-field {
   border: none;
   padding: 5px;
@@ -33,19 +52,19 @@ body {
   width: 40%;
 }
 .search-button{
-  padding: 4px;
-  margin-right: 3px;
-  background-color: cadetblue;
-  color: black;
-  font: 700;
   font-weight: 700;
-  border-radius: 5px;
+  font-size: large;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
 }
 .search-button:hover{
   background-color: darkgrey;
   box-shadow: 4px 4px 7px cadetblue;
 
 }
+/* Product Area  */
 .all-product{
   /* margin-left: 10px; */
 }
